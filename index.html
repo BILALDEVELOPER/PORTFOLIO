@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">BILAL</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon iconcolor"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+
+    <section class="hero container-fluid d-flex align-items-center" id="home">
+        <div class="row">
+            <!-- Text Content -->
+            <div class="col-md-6 py-5 d-flex flex-column justify-content-center text-container">
+                <h1>HELLO!</h1>
+                <h1>I'm a web designer based in Karachi</h1>
+                <div class="button-group">
+                    <button class="hire-button px-4 py-3">HIRE ME</button>
+                    <button class="work-button px-4 py-3">MY WORKS</button>
+                </div>
+            </div>
+            <!-- Image Content -->
+            <div class="col-md-6 d-flex justify-content-center">
+                <div class="image">
+                    <img src="images/hero-img 1.webp" class="img-fluid" alt="Hero Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+
+    <section class="about container-fluid" id="about">
+        <div class="row">
+            <div class="col-md-12 pt-5">
+                <h2>ABOUT ME</h2>
+                <p>
+                    I am a dedicated and creative Frontend Developer with a strong passion for crafting visually
+                    stunning
+                    and highly functional web applications. With expertise in HTML, CSS, JavaScript, and responsive
+                    design frameworks like Bootstrap, I excel in delivering seamless user experiences that adapt
+                    beautifully to all devices. My skills extend to modern libraries and tools, ensuring cutting-edge
+                    designs that align with current web trends. I have a keen eye for detail and a deep understanding of
+                    UI/UX principles, enabling me to transform concepts into engaging, interactive web pages.
+                    <br><br>
+                    Currently, I am pursuing a full-stack development course to enhance my technical capabilities and
+                    broaden my knowledge of backend technologies. As a problem-solver at heart, I thrive on challenges
+                    and continuously seek opportunities to grow and improve. Whether working on dynamic layouts or
+                    complex web features, I am committed to delivering excellence in every project. Let’s collaborate
+                    and bring your ideas to life on the web!
+                </p>
+                <ul>
+                    <li class="d-flex">
+                        <span class="white">Name:</span>
+                        <span class="grey">BILAL</span>
+                    </li>
+                    <li class="d-flex">
+                        <span class="white">Date of Birth:</span>
+                        <span class="grey">September 21, 2007</span>
+                    </li>
+                    <li class="d-flex">
+                        <span class="white">Address:</span>
+                        <span class="grey">B Area, 24th Street, House 15, Qayyumabad, Karachi</span>
+                    </li>
+                    <li class="d-flex">
+                        <span class="white">Zip Code:</span>
+                        <span class="grey">07563</span>
+                    </li>
+                    <li class="d-flex">
+                        <span class="white">Email:</span>
+                        <span class="grey">bilaldeveloper36@gmail.com</span>
+                    </li>
+                    <li class="d-flex">
+                        <span class="white">My Projects:</span>
+                        <span class="grey">
+                            <a href="https://github.com/bilaldeveloper" target="_blank" class="project-link">
+                                github.com/bilaldeveloper
+                            </a>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+
+    <section class="services container-fluid my-5" id="services">
+        <h2>Services</h2>
+        <p>I offer a range of services to help businesses and individuals bring their ideas to life. From creating
+            visually appealing websites to developing robust web applications, I focus on delivering high-quality
+            solutions. My expertise ensures responsive designs, clean code, and seamless user experiences. Let’s
+            collaborate to turn your vision into reality!</p>
+        <div class="row gap-4 py-md-4 d-flex justify-content-center mt-5">
+            <div class="col-xl-3 col-md-5 child py-5 px-5 d-flex flex-column align-items-center justify-content-center">
+                <img src="icons/responsive-design.png" class="mb-3" alt="web developer icon">
+                <h3 class="mb-0">WEB DESIGN</h3>
+                <div class="line my-2 "></div>
+            </div>
+            <div
+                class="col-xl-3 col-md-5  child py-5 px-5 d-flex flex-column align-items-center justify-content-center">
+                <img src="icons/photography.png" class="mb-3" alt="web developer icon">
+                <h3 class="mb-0">PHOTOGRAPHY</h3>
+                <div class="line my-2 "></div>
+            </div>
+            <div
+                class="col-xl-3 col-md-5  child py-5 px-5 d-flex flex-column align-items-center justify-content-center">
+                <img src="icons/web developer.png" class="mb-3" alt="web developer icon">
+                <h3 class="mb-0">Web DEVELOPER</h3>
+                <div class="line my-2 "></div>
+            </div>
+            <div
+                class="col-xl-3 col-md-5  child py-5 px-5 d-flex flex-column align-items-center justify-content-center">
+                <img src="icons/app-development.png" class="mb-3" alt="web developer icon">
+                <h3 class="mb-0">APP DEVELOPING</h3>
+                <div class="line my-2 "></div>
+            </div>
+            <div
+                class="col-xl-3 col-md-5  child py-5 px-5 d-flex flex-column align-items-center justify-content-center">
+                <img src="icons/awareness.png" class="mb-3" alt="web developer icon">
+                <h3 class="mb-0">BRANDING</h3>
+                <div class="line my-2 "></div>
+            </div>
+            <div
+                class="col-xl-3 col-md-5  child py-5 px-5 d-flex flex-column align-items-center justify-content-center">
+                <img src="icons/product-innovation.png" class="mb-3" alt="web developer icon">
+                <h3 class="mb-0">PRODUCT STRATEGY</h3>
+                <div class="line my-2 "></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+
+    <section class="skills container-fluid my-5" id="skills">
+        <h2>My Skills</h2>
+        <p>
+            I am a passionate and driven full-stack developer with expertise in HTML, CSS, JavaScript, and PHP. I am
+            skilled in creating responsive, user-friendly websites using frameworks like Bootstrap and have experience
+            working with various front-end and back-end technologies. With a keen eye for design and attention to
+            detail, I strive to deliver seamless, high-performance websites that provide exceptional user experiences.
+        </p>
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <li class="d-flex mb-2">
+                    <span class="skill">HTML5</span>
+                    <span class="percentage">90%</span>
+                </li>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="col-md-6 mt-3 mt-md-0">
+                <li class="d-flex mb-2">
+                    <span class="skill">CSS</span>
+                    <span class="percentage">90%</span>
+                </li>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 90%;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <li class="d-flex mb-2">
+                    <span class="skill">BOOTSTRAP</span>
+                    <span class="percentage">95%</span>
+                </li>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 95%;"></div>
+                </div>
+            </div>
+            <div class="col-md-6 mt-3 mt-md-0">
+                <li class="d-flex mb-2">
+                    <span class="skill">JAVASCRIPT</span>
+                    <span class="percentage">80%</span>
+                </li>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <li class="d-flex mb-2">
+                    <span class="skill">CANVA</span>
+                    <span class="percentage">75%</span>
+                </li>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 75%;"></div>
+                </div>
+            </div>
+            <div class="col-md-6 mt-3 mt-md-0">
+                <li class="d-flex mb-2">
+                    <span class="skill">SEO</span>
+                    <span class="percentage">70%</span>
+                </li>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 70%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+
+    <section class="container-fluid my-5 projects" id="projects">
+        <h2>My Projects</h2>
+        <p>My projects reflect a blend of creativity, technical expertise, and a passion for innovation. From sleek,
+            responsive websites to robust web applications, each project is designed with a focus on functionality and
+            user experience. Explore my work to see how ideas are transformed into impactful digital solutions.</p>
+        <div class="row gap-4 mt-5">
+            <div class="col-md-4 parent p-0 position-relative">
+                <img src="https://blog.zegocloud.com/wp-content/uploads/2024/02/landing-page-frontend-project-1024x576.jpg"
+                    class="img-fluid" alt="project 1">
+                <div class="overlay d-flex align-items-center flex-column justify-content-center">
+                    <h3>MY FIRST PROJECT</h3>
+                    <p>Web Design</p>
+                </div>
+            </div>
+            <div class="col-md-7 parent p-0 position-relative">
+                <img src="https://www.akkodis.com/-/media/project/akkodis/akkodis/images/campaign-images/front-end-web-developer.png?h=630&iar=0&w=1200&hash=F67CB3E101DC6B260B8E395FE0481F34"
+                    class="img-fluid" alt="project 2">
+                <div class="overlay d-flex align-items-center flex-column justify-content-center">
+                    <h3>MY SECOND PROJECT</h3>
+                    <p>Web Design</p>
+                </div>
+            </div>
+        </div>
+        <div class="row gap-4 mt-4">
+            <div class="col-md-7 parent p-0 position-relative">
+                <img src="https://t4.ftcdn.net/jpg/01/99/22/13/360_F_199221376_QKxOxxpJASf3FpRecfrm17WcHxhS9q8Q.jpg"
+                    class="img-fluid" alt="project 1">
+                <div class="overlay d-flex align-items-center flex-column justify-content-center">
+                    <h3>MY THIRD PROJECT</h3>
+                    <p>Web Design</p>
+                </div>
+            </div>
+            <div class="col-md-4 parent p-0 position-relative">
+                <img src="https://cdn.pixabay.com/photo/2015/01/09/11/11/startup-594126_960_720.jpg" class="img-fluid"
+                    alt="project 1">
+                <div class="overlay d-flex align-items-center flex-column justify-content-center">
+                    <h3>MY FOURTH PROJECT</h3>
+                    <p>Web Design</p>
+                </div>
+            </div>
+        </div>
+        <div class="row gap-4 mt-4">
+            <div class="col-md-7 parent p-0 position-relative">
+                <img src="https://cdn.pixabay.com/photo/2015/07/17/22/42/typing-849806_640.jpg" class="img-fluid"
+                    alt="project 1">
+                <div class="overlay d-flex align-items-center flex-column justify-content-center">
+                    <h3>MY FIFTH PROJECT</h3>
+                    <p>Web Design</p>
+                </div>
+            </div>
+            <div class="col-md-4 parent p-0 position-relative">
+                <img src="https://cdn.pixabay.com/photo/2020/05/29/13/20/project-management-5235092_640.jpg"
+                    class="img-fluid" alt="project 1">
+                <div class="overlay d-flex align-items-center flex-column justify-content-center">
+                    <h3>MY SIXTH PROJECT</h3>
+                    <p>Web Design</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+
+    <section class="container-fluid contact" id="contact">
+        <h2>Contact Me</h2>
+        <p>Got a project or idea you'd like to discuss? Feel free to reach out—I'm always excited to collaborate and
+            create something amazing. Connect with me through email, call, or social media below!</p>
+
+        <div class="row">
+            <div class="col-md-6 img-parent p-0 m-0">
+                <img src="/images/contact-img.png" class="img-fluid" alt="contact-img">
+            </div>
+            <div class="col-md-6 form px-5 py-5 m-0 d-flex flex-column justify-content-center p-0">
+                <form>
+                   <div class="form-item">
+                     <input type="text" class="form-control" placeholder="Name" required>
+                   </div>
+                   <div class="form-item">
+                    <input type="email" class="form-control" placeholder="Email" required>
+                  </div>
+                  <div class="form-item">
+                    <input type="text" class="form-control" placeholder="Subject" required>
+                  </div>
+                  <div class="">
+                    <textarea placeholder="Message" class="form-message" required></textarea>
+                  </div>
+                    <button class="submit-button py-3 px-5">SEND MESSAGE</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="contact-grid mt-5">
+            <div class="child d-flex flex-column align-items-center justify-content-center">
+                <div class="icon-round d-flex justify-content-center align-items-center">
+                    <i class="fa-solid fa-signs-post"></i>
+                </div>
+                <h3 class="mt-4">ADDRESS</h3>
+                <p>B Area, 24th Street, House 15, Qayyumabad, Karachi</p>
+            </div>
+            <div class="child d-flex flex-column align-items-center justify-content-center">
+                <div class="icon-round d-flex justify-content-center align-items-center">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <h3 class="mt-4">CONTACT NUMBER</h3>
+                <p>0302-2901741</p>
+            </div>
+            <div class="child d-flex flex-column align-items-center justify-content-center">
+                <div class="icon-round d-flex justify-content-center align-items-center">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </div>
+                <h3 class="mt-4">EMAIL ADDRESS</h3>
+                <p>bilaldeveloper36@gmail.com</p>
+            </div>
+            <div class="child d-flex flex-column align-items-center justify-content-center">
+                <div class="icon-round d-flex justify-content-center align-items-center">
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+                <h3 class="mt-4">SOCIAL</h3>
+                <p>
+                    <a href="https://www.linkedin.com/in/bilaldeveloper" target="_blank">LinkedIn</a> |
+                    <a href="https://github.com/bilaldeveloper" target="_blank">GitHub</a> |
+                    <a href="https://twitter.com/bilaldeveloper" target="_blank">Twitter</a>
+                </p>
+            </div>
+        </div>
+
+        
+        <br><br><br><br><br><br>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

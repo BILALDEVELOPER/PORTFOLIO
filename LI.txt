@@ -1,0 +1,6 @@
+theme color
+
+1 yellow #ffbd39
+2 white #fff
+3 black #000000
+4 box background rgba(255, 255, 255, 0.1)

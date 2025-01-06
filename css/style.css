@@ -1,0 +1,871 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000000 !important;
+}
+
+/* NAVBAR */
+
+.navbar {
+    background-color: #000000 !important;
+    position: relative; /* Relative so it doesn't overlap content */
+    z-index: 1; /* Ensure it sits above other elements */
+    width: 100%; /* Full width */
+}
+
+.navbar-nav .nav-item {
+    margin: 0 10px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #fff !important;
+    position: relative;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #ffbd39 !important;
+}
+
+.navbar-brand {
+    font-size: 2rem !important;
+    font-family: "Poppins ExtraBold";
+    color: #fff !important;
+}
+
+.iconcolor {
+    background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="%237a7a7a" stroke-width="2" d="M4 7h22M4 15h22M4 23h22" /%3E%3C/svg%3E') !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navbar-nav .nav-item .nav-link:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #ffbd39;
+    animation: anime;
+    animation-duration: 1s;
+}
+
+@keyframes anime {
+    0% {
+        left: 0;
+        width: 0;
+    }
+    50% {
+        left: 0%;
+        width: 100%;
+    }
+    100% {
+        left: 0;
+        width: 100%;
+    }
+}
+
+/* Add margin to push content down when navbar expands */
+.collapse {
+    margin-bottom: 0; /* Default state */
+    transition: all 0.3s; /* Smooth transition */
+}
+
+.collapse.show {
+    margin-bottom: 0rem; /* Adjust to the height of the expanded menu */
+}
+
+.container-fluid {
+    padding: 0 20rem !important;
+}
+
+/* Responsive container padding */
+@media screen and (max-width: 1600px) {
+    .container-fluid {
+        padding: 0 20rem !important;
+    }
+}
+
+@media screen and (max-width: 1480px) {
+    .container-fluid {
+        padding: 0 15rem !important;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .container-fluid {
+        padding: 0 8rem !important;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .container-fluid {
+        padding: 0 4rem !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container-fluid {
+        padding: 0 2rem !important;
+    }
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    background-color: black !important;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    scroll-margin-top: 7rem !important;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 991px) {
+    .hero {
+        padding: 1.5rem 1rem; /* Reduce padding for smaller screens */
+        margin-top: 3rem;    /* Adjust margin for smaller viewports */
+        scroll-margin-top: 6rem !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+        padding: 1rem 0.5rem;  /* Further reduce padding */
+        margin-top: 2rem;      /* Adjust top margin for mobile */
+        scroll-margin-top: 5rem !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero {
+        padding: 0.5rem 0.5rem; /* Minimal padding for very small screens */
+        margin-top: 2rem;       /* Adjust top margin further */
+        scroll-margin-top: 4rem !important;
+    }
+}
+
+.text-container {
+    text-align: start;
+}
+
+.hero span {
+    font-size: 1.5rem !important;
+    color: #ffbd39;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-family: "Poppins ExtraBold", sans-serif;
+    color: #fff;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+    /* Adds spacing between buttons */
+    flex-wrap: wrap;
+    /* Allows buttons to wrap on smaller screens */
+    margin-top: 1.5rem;
+}
+
+.hire-button,
+.work-button {
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: 40px;
+    letter-spacing: 0.1rem;
+    padding: 0.8rem 1.5rem;
+    transition: 1s;
+}
+
+.hire-button {
+    background-color: #ffbd39;
+    border: none;
+}
+
+.hire-button:hover {
+    background-color: #bf8719;
+}
+
+.work-button {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.work-button:hover {
+    background-color: #bfb6b669;
+}
+
+.image {
+    width: 100%;
+    max-width: 40rem;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+    /* Center image */
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Responsive Design */
+
+
+@media (max-width: 800px) {
+    .hero h1 {
+        font-size: 2rem;
+        line-height: 1.3;
+        text-align: start;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero h1 {
+        font-size: 2rem;
+        line-height: 1.3;
+        text-align: center;
+    }
+
+    .text-container {
+        text-align: center;
+        /* Center-align text for smaller screens */
+    }
+
+    .button-group {
+        justify-content: center;
+        /* Center buttons */
+        gap: 0.8rem;
+        /* Adjust spacing */
+    }
+
+    .hire-button,
+    .work-button {
+        font-size: 0.8rem;
+        padding: 0.7rem 1.2rem;
+        /* Adjust padding for smaller screens */
+    }
+
+    .image {
+        max-width: 30rem;
+        /* Reduce max width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        flex-direction: column;
+        /* Stack text and image vertically */
+        padding: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .button-group {
+        align-items: center;
+        /* Center buttons */
+    }
+
+    .hire-button,
+    .work-button {
+        padding: 0.6rem 0.5rem;
+    }
+
+    .image {
+        max-width: 100%;
+        /* Adjust to container width */
+    }
+}
+
+@media (max-width: 1200px) {
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+}
+
+/* ABOUT SECTION */
+
+.about {
+    background-color: black;
+    padding: 2rem 0;
+    scroll-margin-top: 2rem !important;
+}
+
+.about h2 {
+    font-family: "Poppins ExtraBold", sans-serif;
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.about p {
+    color: #999999;
+    line-height: 1.8;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.about ul {
+    list-style: none;
+    padding: 1rem 0;
+}
+
+.about ul li {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.white {
+    color: #fff;
+    font-weight: 600;
+    width: 14rem;
+    text-transform: capitalize;
+}
+
+.grey {
+    color: #999999;
+    font-weight: 400;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.project-link {
+    color: #999999;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.project-link:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+@media (max-width: 1200px) {
+    .about h2 {
+        font-size: 2.5rem;
+    }
+
+    .about p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .about h2 {
+        font-size: 2rem;
+    }
+
+    .about p {
+        font-size: 0.9rem;
+    }
+}
+
+/* SERVICES SECTION */
+
+.services {
+    background-color: #000000;
+    scroll-margin-top: 150px !important;
+}
+
+.services h2 {
+    font-family: "Poppins ExtraBold", sans-serif;
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.services p {
+    color: #999999;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.services .child {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 0.5s;
+}
+
+.services .child:hover {
+    background-color: #ffbd39;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.services .child img {
+    width: 5rem;
+    height: auto;
+}
+
+.services .child h3 {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 100;
+    text-align: center;
+}
+
+.services .child:hover h3 {
+    color: #000;
+    transition: 0.5s;
+}
+
+.services .line {
+    width: 30px;
+    height: 2px;
+    background-color: #ffbd39;
+    /* Use background-color instead of color */
+    z-index: 2;
+}
+
+.services .child:hover .line {
+    background-color: #000;
+    transition: 0.5s;
+}
+
+@media (max-width: 1200px) {
+    .services h2 {
+        font-size: 2.5rem;
+    }
+
+    .services p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .services h2 {
+        font-size: 2rem;
+    }
+
+    .services p {
+        font-size: 0.9rem;
+    }
+}
+
+/* SKILLS SECTION */
+
+.skills {
+    background-color: #000000;
+    scroll-margin-top: 140px !important;
+}
+
+.skills h2 {
+    font-family: "Poppins ExtraBold", sans-serif;
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.skills p {
+    color: #999999;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.skills .skill {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    width: 50%;
+}
+
+.skills .percentage {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    width: 50%;
+    text-align: right;
+}
+
+.skills .progress {
+    background-color: #1a1a1a;
+    position: relative;
+}
+
+.skills .progress-bar {
+    background-color: #ffbd39;
+    position: relative;
+}
+
+.skills .progress-bar .percentage-end {
+    position: absolute;
+    left: 50%;
+    /* Position the percentage at the middle of the progress bar */
+    transform: translateX(-50%);
+    /* Center it horizontally */
+    top: -25px;
+    /* Adjust the vertical position above the progress bar */
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+    .skills h2 {
+        font-size: 2.5rem;
+    }
+
+    .skills p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .skills h2 {
+        font-size: 2rem;
+    }
+
+    .skills p {
+        font-size: 0.9rem;
+    }
+}
+
+/* PROJECT SECTION */
+
+.projects {
+    background-color: #000000;
+    scroll-margin-top: 120px !important;
+}
+
+.projects h2 {
+    font-family: "Poppins ExtraBold", sans-serif;
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.projects p {
+    color: #999999;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.projects h3 {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 400;
+    opacity: 1 !important;
+}
+
+.projects .parent p {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    opacity: 1 !important;
+}
+
+.projects .col-md-4 img {
+    height: 18rem !important;
+    width: 100% !important;
+    object-fit: cover;
+}
+
+.projects .col-md-7 img {
+    height: 18rem !important;
+    width: 100% !important;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffbd39;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    /* Start fully transparent */
+    visibility: hidden;
+    /* Make it non-interactive */
+    transition: opacity 0.5s, visibility 0.5s;
+    /* Smooth transition */
+    cursor: pointer;
+}
+
+.parent:hover .overlay {
+    opacity: 0.9;
+    /* Make it visible */
+    visibility: visible;
+    /* Allow interaction */
+}
+
+
+@media (max-width: 1200px) {
+    .projects h2 {
+        font-size: 2.5rem;
+    }
+
+    .projects p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .projects h2 {
+        font-size: 2rem;
+    }
+
+    .projects p {
+        font-size: 0.9rem;
+    }
+}
+
+/* CONTACT SECTION */
+
+.contact {
+    background-color: #000000;
+    scroll-margin-top: 120px !important;
+    padding: 2rem 1rem;
+}
+
+.contact h2 {
+    font-family: "Poppins ExtraBold", sans-serif;
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.contact p {
+    color: #999999;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+/* Contact Grid */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 2rem;
+}
+
+.icon-round {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-solid {
+    color: #ffbd39 !important;
+    font-size: 1.9rem;
+}
+
+.contact .child p {
+    color: #999999;
+    line-height: 1.5;
+    font-size: 1rem;
+    word-spacing: 0 !important;
+    text-align: center;
+    font-weight: 400;
+}
+
+.contact .child p a {
+    color: #ffbd39;
+    transition: 0.5s;
+}
+
+.contact .child p a:hover {
+    color: #fff;
+    transition: 0.5s;
+}
+
+.contact .child h3 {
+    color: #fff;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    font-weight: 500 !important;
+    word-spacing: 0 !important;
+    text-align: center;
+}
+
+/* Media Queries for smaller screens */
+
+@media (max-width: 1200px) {
+    .contact h2 {
+        font-size: 2.5rem;
+    }
+
+    .contact p {
+        font-size: 1rem;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr 1fr;
+        /* Two columns on medium screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    .contact p {
+        font-size: 0.9rem;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        /* One column on small screens */
+    }
+
+    .icon-round {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .fa-solid {
+        font-size: 1.5rem;
+    }
+}
+.form {
+    background-color: #fff;
+}
+
+.img-parent {
+    overflow: hidden;
+}
+
+.img-parent img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+}
+
+.form .form-control {
+    height: 3rem !important;
+    border-radius: 0.3rem;
+    border: 1px solid #ced4da;
+    margin-bottom: 1rem;
+}
+
+.form .form-control::placeholder {
+    color: #6e6c6c;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.form .form-message {
+    border-radius: 0.3rem;
+    border: 1px solid #ced4da;
+    margin-bottom: 1rem;
+    width: 100%;
+    padding: 0.8rem;
+    height: 12rem !important;
+}
+
+.submit-button {
+    background-color: #ffbd39;
+    color: #000;
+    font-family: "Poppins";
+    font-size: 12px !important;
+    font-weight: 600;
+    border: none;
+    border-radius: 2.5rem;
+    transition: 0.5s;
+}
+
+.submit-button:hover {
+    background-color: #ffd54b;
+    color: #000;
+    transition: 0.5s;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .form {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .col-md-6 {
+        margin-bottom: 2rem;
+    }
+
+    .form {
+        padding: 1.5rem;
+    }
+
+    .submit-button {
+        width: 100%;
+    }
+
+    .form .form-control, .form .form-message {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 575px) {
+    .col-md-6 {
+        padding: 0;
+    }
+
+    .form {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .submit-button {
+        font-size: 14px;
+        padding: 1rem;
+    }
+
+    .form .form-control, .form .form-message {
+        font-size: 13px;
+        padding: 0.6rem;
+    }
+}
