@@ -13,9 +13,12 @@ body {
 
 .navbar {
     background-color: #000000 !important;
-    position: relative; /* Relative so it doesn't overlap content */
-    z-index: 1; /* Ensure it sits above other elements */
-    width: 100%; /* Full width */
+    position: relative;
+    /* Relative so it doesn't overlap content */
+    z-index: 1;
+    /* Ensure it sits above other elements */
+    width: 100%;
+    /* Full width */
 }
 
 .navbar-nav .nav-item {
@@ -61,10 +64,12 @@ body {
         left: 0;
         width: 0;
     }
+
     50% {
         left: 0%;
         width: 100%;
     }
+
     100% {
         left: 0;
         width: 100%;
@@ -73,14 +78,18 @@ body {
 
 /* Add margin to push content down when navbar expands */
 .collapse {
-    margin-bottom: 0; /* Default state */
-    transition: all 0.3s; /* Smooth transition */
+    margin-bottom: 0;
+    /* Default state */
+    transition: all 0.3s;
+    /* Smooth transition */
 }
 
 .collapse.show {
-    margin-bottom: 0rem; /* Adjust to the height of the expanded menu */
+    margin-bottom: 0rem;
+    /* Adjust to the height of the expanded menu */
 }
 
+/* Default container padding for larger screens */
 .container-fluid {
     padding: 0 20rem !important;
 }
@@ -88,34 +97,39 @@ body {
 /* Responsive container padding */
 @media screen and (max-width: 1600px) {
     .container-fluid {
-        padding: 0 20rem !important;
+        padding: 0 18rem !important;
     }
 }
 
-@media screen and (max-width: 1480px) {
+@media screen and (max-width: 1500px) {
     .container-fluid {
         padding: 0 15rem !important;
     }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1300px) {
+    .container-fluid {
+        padding: 0 10rem !important;
+    }
+}
+
+@media screen and (max-width: 1200px) {
     .container-fluid {
         padding: 0 8rem !important;
     }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1000px) {
     .container-fluid {
-        padding: 0 4rem !important;
+        padding: 0 5rem !important;
     }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 999px) {
     .container-fluid {
         padding: 0 2rem !important;
     }
 }
-
 
 /* HERO SECTION */
 
@@ -132,25 +146,32 @@ body {
 /* Responsive adjustments */
 @media screen and (max-width: 991px) {
     .hero {
-        padding: 1.5rem 1rem; /* Reduce padding for smaller screens */
-        margin-top: 3rem;    /* Adjust margin for smaller viewports */
+        padding: 1.5rem 1rem;
+        /* Reduce padding for smaller screens */
+        margin-top: 3rem;
+        /* Adjust margin for smaller viewports */
         scroll-margin-top: 6rem !important;
     }
 }
 
 @media screen and (max-width: 768px) {
     .hero {
-        flex-direction: column; /* Stack content vertically on smaller screens */
-        padding: 1rem 0.5rem;  /* Further reduce padding */
-        margin-top: 2rem;      /* Adjust top margin for mobile */
+        flex-direction: column;
+        /* Stack content vertically on smaller screens */
+        padding: 1rem 0.5rem;
+        /* Further reduce padding */
+        margin-top: 2rem;
+        /* Adjust top margin for mobile */
         scroll-margin-top: 5rem !important;
     }
 }
 
 @media screen and (max-width: 576px) {
     .hero {
-        padding: 0.5rem 0.5rem; /* Minimal padding for very small screens */
-        margin-top: 2rem;       /* Adjust top margin further */
+        padding: 0.5rem 0.5rem;
+        /* Minimal padding for very small screens */
+        margin-top: 2rem;
+        /* Adjust top margin further */
         scroll-margin-top: 4rem !important;
     }
 }
@@ -697,7 +718,7 @@ body {
     align-items: center;
 }
 
-.fa-solid {
+.contact-grid .fa-solid {
     color: #ffbd39 !important;
     font-size: 1.9rem;
 }
@@ -770,6 +791,7 @@ body {
         font-size: 1.5rem;
     }
 }
+
 .form {
     background-color: #fff;
 }
@@ -844,7 +866,8 @@ body {
         width: 100%;
     }
 
-    .form .form-control, .form .form-message {
+    .form .form-control,
+    .form .form-message {
         font-size: 14px;
     }
 }
@@ -864,8 +887,78 @@ body {
         padding: 1rem;
     }
 
-    .form .form-control, .form .form-message {
+    .form .form-control,
+    .form .form-message {
         font-size: 13px;
         padding: 0.6rem;
     }
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #000000;
+    /* Dark background for better contrast */
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+}
+
+footer h2 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+footer li,
+footer p {
+    list-style: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+footer li {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+
+footer li i {
+    margin-right: 0.5rem;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer .question p {
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+footer .question li {
+    margin-bottom: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    transition: 0.5s;
+}
+
+footer a:hover {
+    color: #ffbd39;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+    footer h2 {
+        font-size: 1.3rem;
+    }
+
+    footer {
+        text-align: start;
+    }
+
+
 }
