@@ -5,20 +5,16 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", serif;
     background-color: #000000 !important;
 }
+
 
 /* NAVBAR */
 
 .navbar {
-    background-color: #000000 !important;
-    position: relative;
-    /* Relative so it doesn't overlap content */
-    z-index: 1;
-    /* Ensure it sits above other elements */
+    background-color: #0d0b0b !important;
     width: 100%;
-    /* Full width */
 }
 
 .navbar-nav .nav-item {
@@ -36,7 +32,8 @@ body {
 
 .navbar-brand {
     font-size: 2rem !important;
-    font-family: "Poppins ExtraBold";
+    font-family: "Poppins", serif;
+    font-weight: 900;
     color: #fff !important;
 }
 
@@ -139,7 +136,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 3rem;
+    margin-top: 7rem !important;
     scroll-margin-top: 7rem !important;
 }
 
@@ -187,7 +184,7 @@ body {
 
 .hero h1 {
     font-size: 2.5rem;
-    font-family: "Poppins ExtraBold", sans-serif;
+    font-family: "Poppins", serif;
     color: #fff;
     font-weight: 800;
     line-height: 1.2;
@@ -341,11 +338,12 @@ body {
 .about {
     background-color: black;
     padding: 2rem 0;
-    scroll-margin-top: 2rem !important;
+    scroll-margin-top: 6rem !important;
 }
 
 .about h2 {
-    font-family: "Poppins ExtraBold", sans-serif;
+    font-family: "Poppins", serif;
+    font-weight: 800;
     color: #fff;
     font-size: 3rem;
     margin-bottom: 2rem;
@@ -424,7 +422,8 @@ body {
 }
 
 .services h2 {
-    font-family: "Poppins ExtraBold", sans-serif;
+    font-family: "Poppins", serif;
+    font-weight: 800;
     color: #fff;
     font-size: 3rem;
     margin-bottom: 2rem;
@@ -455,7 +454,8 @@ body {
 }
 
 .services .child h3 {
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", serif;
+    font-weight: 600 !important;
     color: #fff;
     font-size: 1.4rem;
     font-weight: 100;
@@ -508,7 +508,8 @@ body {
 }
 
 .skills h2 {
-    font-family: "Poppins ExtraBold", sans-serif;
+    font-family: "Poppins", serif;
+    font-weight: 800;
     color: #fff;
     font-size: 3rem;
     margin-bottom: 2rem;
@@ -588,7 +589,8 @@ body {
 }
 
 .projects h2 {
-    font-family: "Poppins ExtraBold", sans-serif;
+    font-family: "Poppins", serif;
+    font-weight: 800;
     color: #fff;
     font-size: 3rem;
     margin-bottom: 2rem;
@@ -603,7 +605,8 @@ body {
 }
 
 .projects h3 {
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", serif;
+    font-weight: 500 !important;
     color: #fff;
     font-size: 1.4rem;
     font-weight: 400;
@@ -611,7 +614,7 @@ body {
 }
 
 .projects .parent p {
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", serif;
     color: #fff;
     font-size: 1rem;
     font-weight: 600;
@@ -686,7 +689,8 @@ body {
 }
 
 .contact h2 {
-    font-family: "Poppins ExtraBold", sans-serif;
+    font-family: "Poppins", serif;
+    font-weight: 800;
     color: #fff;
     font-size: 3rem;
     margin-bottom: 2rem;
@@ -831,7 +835,7 @@ body {
 .submit-button {
     background-color: #ffbd39;
     color: #000;
-    font-family: "Poppins";
+    font-family: "Poppins", serif;
     font-size: 12px !important;
     font-weight: 600;
     border: none;
@@ -897,7 +901,7 @@ body {
 /* FOOTER */
 
 footer {
-    background-color: #000000;
+    background-color: #0d0b0b;
     /* Dark background for better contrast */
     color: rgba(255, 255, 255, 0.7);
     font-size: 0.9rem;
